@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/para"
+        android:text="Please enter your details"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:hint="Name"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:hint="Add"
+        android:textSize="24dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:textSize="24dp"
+        android:layout_below="@id/ad"
+        android:hint="Phone No."/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bg"
+        android:textSize="24dp"
+        android:layout_below="@id/phone"
+        android:hint="B.G."/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/btntxt"
+        android:layout_marginTop="20dp"
+        android:text="Insert Data"
+        android:textSize="24dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnView"
+        android:backgroundTint="@color/btn"
+        android:textColor="@color/btntxt"
+        android:text="View Data"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnInsert"/>
+</RelativeLayout>
